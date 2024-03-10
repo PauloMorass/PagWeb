@@ -1,0 +1,63 @@
+/* por padrão os navegadores colocam margim de 8px no corpo da página */
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center; /* alinhamento de texto ao centro ou meio, alinha alguns elementos também*/
+  margin: 0; /* zera os 8px padronizados */
+}
+/* relogio dos valores (top,right,bottom e left) margin e padding */
+#hero {
+  width: 592px;
+  margin: 0 auto 72px; /* uma forma de alinhamento de elementos e containers*/
+}
+
+#hero img {
+  margin-bottom: 72px;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 49px; /* tamanho da fonte */
+  line-height: 56px; /* altura da linha */
+  font-weight: normal; /*peso da fonte, deixando ela pesada e marcada*/
+  margin-bottom: 32px;
+}
+/*continuação do elemento um após o outro 'cascata' aumentando sua especificidade para (0,0,2) */
+h1 span {
+  font-weight: bold;
+}
+
+/* agrupamento de seletores ','*/
+
+/*juntando elemento*/
+span,
+a {
+  color: #ff9900;
+}
+
+p,
+#footer {
+  color: #7d7987;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+/* pege o  'a' que anterior a ele tenha um 'a' */
+#footer a + a {
+  margin-left: 28px;
+}
+
+
+.line {
+  width: 568px;
+  height: 0px;
+  border: 1px solid #eceff2;
+  margin: 0 auto 8px;
+}
+
+/* sobrepor elementos um dentro do outro*/
+/* 'fixed' deixa o elemento fixo */
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
